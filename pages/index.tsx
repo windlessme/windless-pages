@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>個人履歷</title>
+        <title>Windless.ME</title>
         <meta name="description" content="簡潔潔白的個人履歷頁面" />
       </Head>
       <main className="resume-container">
@@ -209,7 +209,8 @@ export default function Home() {
         }
         .linktree {
           display: flex;
-          gap: 20px;
+          flex-wrap: wrap;
+          gap: 12px 12px;
           justify-content: flex-start;
           margin-bottom: 16px;
         }
@@ -222,6 +223,7 @@ export default function Home() {
           text-decoration: none;
           border: 1px solid #e0e0e0;
           transition: background 0.15s, border 0.15s;
+          margin-bottom: 6px;
         }
         .linktree a:hover {
           background: #e9ebf0;
@@ -232,15 +234,46 @@ export default function Home() {
         }
         @media (max-width: 600px) {
           .resume-container {
-            padding: 24px 8px;
+            padding: 18px 2vw;
+            margin: 16px 0;
           }
           .header {
             flex-direction: column;
             align-items: flex-start;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
           }
           .avatar {
             margin-right: 0;
             margin-bottom: 16px;
+            width: 72px;
+            height: 72px;
+          }
+          h1 {
+            font-size: 1.5rem;
+          }
+          h2 {
+            font-size: 1rem;
+          }
+          .contact {
+            font-size: 0.95rem;
+          }
+          .linktree {
+            gap: 8px 8px;
+            margin-bottom: 12px;
+          }
+          .linktree a {
+            font-size: 0.95rem;
+            padding: 6px 10px;
+          }
+          .section {
+            margin-bottom: 20px;
+          }
+          .section h3 {
+            font-size: 1rem;
+          }
+          .section ul {
+            padding-left: 12px;
           }
         }
       `}</style>
